@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>the XYZ</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Predictions :-</a></h1>
+        </div>
+        <div><h1><p style="color:#5c7ad6"><b>
+            {% for x in d %}
+                {{ x }}<br /><br />
+            {% endfor %}
+            </b></p></h1>
+        </div>
+    </body>
+</html>
